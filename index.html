@@ -57,11 +57,11 @@
                   <input v-model="user.role" type="text" class="form-control" />
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="btn btn-primary ml-3">
+                  <button v-if='status'type="submit" class="btn btn-primary ml-3">
                     Submit
                   </button>
-                  <button type="reset" class="btn btn-danger">
-                    Reset
+                  <button v-else @click='updatePerson' type="button" class="btn btn-secondary">
+                    Update
                   </button>
                   <button type="reset" class="btn btn-danger">Reset</button>
                 </div>

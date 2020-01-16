@@ -13,7 +13,7 @@ var app = new Vue({
       { name: "Joe", role: "UI/Ux dev" },
       { name: "Mata", role: "UX dev" }
     ],
-    status: false
+    status: true
   },
   methods: {
     addUser() {
