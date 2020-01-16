@@ -12,7 +12,8 @@ var app = new Vue({
       { name: "Stanley", role: "php dev" },
       { name: "Joe", role: "UI/Ux dev" },
       { name: "Mata", role: "UX dev" }
-    ]
+    ],
+    status: false
   },
   methods: {
     addUser() {
@@ -22,7 +23,10 @@ var app = new Vue({
       alert("Delete me");
     },
     updateItem(id) {
-      this.user = id;
+      this.status = !this.status;
+    },
+    updatePerson(){
+      alert('Field has been updated');
     }
   }
 });
