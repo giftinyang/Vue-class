@@ -19,8 +19,8 @@ var app = new Vue({
     addUser() {
       this.persons.push(this.user);
     },
-    removeItem() {
-      alert("Delete me");
+    removeItem(index) {
+      this.persons.splice(index, 1);
     },
     updateItem(id) {
       this.status = !this.status;
