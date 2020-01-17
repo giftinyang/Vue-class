@@ -11,7 +11,8 @@ var app = new Vue({
       { name: "Samuel", role: "js dev" },
       { name: "Stanley", role: "php dev" },
       { name: "Joe", role: "UI/Ux dev" },
-      { name: "Mata", role: "UX dev" }
+      { name: "Mata", role: "UX dev" },
+      { name: "Gift", role: "Front-end dev" },
     ],
     status: true
   },
