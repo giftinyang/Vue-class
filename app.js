@@ -24,6 +24,7 @@ var app = new Vue({
       this.persons.splice(index, 1);
     },
     updateItem(id) {
+      this.user = id;
       this.status = !this.status;
     },
     updatePerson(){
